@@ -1,0 +1,117 @@
+/* ---------------------------------------------------------------------------------------------------
+
+-----Info
+
+-----Color Swatch
+
+-----Sections
+
+∆ GENERAL
+∆ GRID
+
+
+----------------------------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ GENERAL
+---------------------------------------------------------------------------------------------------*/
+
+
+html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 14px Helvetica;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	float: none;
+}
+
+.clear-fix{
+	clear: both;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------
+    ∆ GRID
+---------------------------------------------------------------------------------------------------*/
+
+.main-container{
+  /*margin-top: 70px;*/
+}
+
+.sub-container{
+  margin-top: 10px;
+}
+
+.meow{
+  background: #ccc;
+  height: 20px;
+}
+
+.container{
+  width: 92%; /* 73.68% 1050px*/
+  max-width: 1324px;
+  min-width: 300px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.columns{
+  float: left;
+  box-sizing: border-box;
+  padding: 0 1%;
+  margin: 5px 0;
+}
+
+.left{
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.right{
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+/* 12 column grid */
+.one    { width: 8.33%; }
+.two    { width: 16.66%; }
+.three  { width: 25%; }     /* quarter */
+.four   { width: 33.32%; }  /* third */
+.five   { width: 41.65%; }
+.six    { width: 50%; }     /* half */
+.seven  { width: 58.31%; }
+.eight  { width: 66.64%; }
+.nine   { width: 75%; }     /* two thirds */
+.ten    { width: 83.3%; }
+.eleven { width: 91.63%; }
+.twelve { width: 100%; }
+
+
+@media only screen and (max-width: 959px){
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .columns { float: none; padding: 0; }
+  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve { width: 100%; }
+
+}
+
+

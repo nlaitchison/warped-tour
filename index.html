@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bands.js"></script>
+
+	</head>
+	<body>
+
+		<div class="main-container">
+			<div class="container">
+
+				<section>
+					<!-- <form id="add-band"> -->
+						<div class="form-input">
+							<label for="hour">Time</label>
+							<input type="number" id="hour"> : <input type="number" id="minute">
+						</div>
+						<div class="form-input">
+							<label for="band">Band</label>
+							<input type="text" id="band">
+							<label for="stage">Stage</label>
+							<input type="text" id="stage">
+						</div>
+						<ul id="s-results">
+						</ul>
+						<button id="add-band"> Add Band </button>
+					<!-- </form> -->
+				</section>
+				<section>
+					<ul id="band-list">
+					</ul>
+				</section>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+			     $('#band').tipuedrop();
+			});
+		</script>
+	</body>
+</html>
+
+
