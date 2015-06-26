@@ -48,7 +48,7 @@ section{
 }
 .form-input{
 	box-sizing: border-box;
-	padding: 10px 0;
+	padding: 15px 0;
 	width: 100%;
 	float: left;
 }
@@ -56,10 +56,10 @@ section{
 	width: 50%;
 }
 .form-input.pair.left{
-	padding-right: 5px;
+	padding-right: 8px;
 }
 .form-input.pair.right{
-	padding-left: 5px;
+	padding-left: 8px;
 }
 .form-input.pair input{
 	width: 100%;
@@ -72,18 +72,18 @@ label{
 input{
 	box-sizing: border-box;
 	display: block;
-	padding: 10px 8px;
+	padding: 12px 8px;
 	text-transform: capitalize
 }
 .time input{
 	box-sizing: border-box;
-	width: 65px;
+	width: 80px;
 	float: left;
 }
 .colon{
 	box-sizing: border-box;
 	float: left;
-	padding: 5px 3px;
+	padding: 12px;
 }
 
 ul#s-results{
