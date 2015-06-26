@@ -72,12 +72,12 @@ label{
 input{
 	box-sizing: border-box;
 	display: block;
-	padding: 8px;
+	padding: 10px 8px;
 	text-transform: capitalize
 }
 .time input{
 	box-sizing: border-box;
-	width: 50px;
+	width: 65px;
 	float: left;
 }
 .colon{
@@ -116,7 +116,7 @@ button{
   text-transform: uppercase;
   margin: 0 auto;
   display: block;
-  line-height: 27px;
+  line-height: 30px;
   background: none;
   box-shadow: none;
   border: 1px solid #000;
@@ -125,6 +125,11 @@ button{
 ul#band-list{
 	margin-top: 15px;
 	font-size: 11px;
+}
+
+ul#band-list li:nth-child(even){
+	background-color: #F2F2F2
+	
 }
 
 span.time, span.band, .stage{

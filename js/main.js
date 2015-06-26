@@ -18,29 +18,30 @@
 	}
 
 	jQuery('#add-band').on('click', function(){
-
-		var item = {
-			'hour' : jQuery('#hour').val(),
-			'min' : jQuery('#minute').val(),
-			'band' : jQuery('#band').val(),
-			'stage' : jQuery('#stage').val(),
-		};
-
-		jQuery('#hour').val('');
-		jQuery('#minute').val('');
-		jQuery('#band').val('');
-		jQuery('#stage').val('');
-		$('#s-results').empty();
-
-		var t = '';
-		if( item.hour == 11 )
-			var t = 'am';
-		else
-			var t = 'pm';
-
-		jQuery('#band-list').append('<li><span class="time">'+item.hour+':'+item.min+' '+t+' </span><span class="band">'+item.band+' </span><span class="stage">'+item.stage+' </span></li>')
-
-		sortList();
+		if( jQuery('#hour').val() != '' && jQuery('#minute').val() != '' && jQuery('#band').val() != '' && jQuery('#stage').val() != '' ){
+			var item = {
+				'hour' : jQuery('#hour').val(),
+				'min' : jQuery('#minute').val(),
+				'band' : jQuery('#band').val(),
+				'stage' : jQuery('#stage').val(),
+			};
+	
+			jQuery('#hour').val('');
+			jQuery('#minute').val('');
+			jQuery('#band').val('');
+			jQuery('#stage').val('');
+			$('#s-results').empty();
+	
+			var t = '';
+			if( item.hour == 11 )
+				var t = 'am';
+			else
+				var t = 'pm';
+	
+			jQuery('#band-list').append('<li><span class="time">'+item.hour+':'+item.min+' '+t+' </span><span class="band">'+item.band+' </span><span class="stage">'+item.stage+' </span></li>')
+	
+			sortList();
+		}
 
 	});
 
