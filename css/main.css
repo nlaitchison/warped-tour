@@ -73,6 +73,7 @@ input{
 	box-sizing: border-box;
 	display: block;
 	padding: 8px;
+	text-transform: capitalize
 }
 .time input{
 	box-sizing: border-box;
@@ -90,10 +91,13 @@ ul#s-results{
 }
 
 li{
-	line-height: 24px;
-	margin: 4px 0;
 	border-bottom: 1px solid #ddd;
 	width: 100%;
+}
+
+ul#s-results li{
+	line-height: 26px;
+	padding: 6px 0;	
 }
 
 li:after{
