@@ -1,5 +1,18 @@
 
 (function($) {
+	
+	console.log( localStorage.getItem("bandList") );
+	if( localStorage.getItem("bandList") ){
+		jQuery('body').find('#band-list').html( localStorage.getItem("bandList") );
+	}
+	
+	function supports_html5_storage() {
+	  try {
+	    return 'localStorage' in window && window['localStorage'] !== null;
+	  } catch (e) {
+	    return false;
+	  }
+	}
 
 	function sortList() {
 
@@ -9,12 +22,22 @@
 	    li.detach().sort(function(a, b) {
 	        var date1 = new Date (new Date().toDateString() + ' ' + $(a).children('span.time').text());
 	        var date2 = new Date (new Date().toDateString() + ' ' + $(b).children('span.time').text());
-	        console.log(date1, date2);
 	        var result = (date1 < date2) ? -1 : (date1 > date2) ? 1 : 0;
 	        return result;
 	    });
 
 	    ul.append(li);
+	    
+		if( supports_html5_storage ){
+			
+			var list = '';
+			
+			li.each(function(){
+				list += '<li>' + jQuery(this).html() + '</li>';
+			});
+			
+			localStorage.setItem("bandList", list);
+		}
 	}
 
 	jQuery('#add-band').on('click', function(){
@@ -41,6 +64,7 @@
 			jQuery('#band-list').append('<li><span class="time">'+item.hour+':'+item.min+' '+t+' </span><span class="band">'+item.band+' </span><span class="stage">'+item.stage+' </span></li>')
 	
 			sortList();
+			
 		}
 
 	});
