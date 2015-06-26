@@ -66,7 +66,7 @@ label{
 input{
 	box-sizing: border-box;
 	display: block;
-	padding: 5px;
+	padding: 8px;
 }
 .time input{
 	box-sizing: border-box;
@@ -104,6 +104,10 @@ button{
   background: none;
   box-shadow: none;
   border: 1px solid #000;
+}
+
+ul#band-list{
+	margin-top: 15px;
 }
 
 
