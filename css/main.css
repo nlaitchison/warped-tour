@@ -87,7 +87,7 @@ input{
 }
 
 ul#s-results{
-	padding: 5px 0 15px;
+	padding: 10px 0 15px;
 }
 
 li{
@@ -114,9 +114,9 @@ button{
   width: 100%;
   border-radius: 0px;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 12px auto 0;
   display: block;
-  line-height: 30px;
+  line-height: 35px;
   background: none;
   box-shadow: none;
   border: 1px solid #000;
