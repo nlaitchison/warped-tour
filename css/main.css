@@ -39,6 +39,40 @@ li{
 	clear: both;
 }
 
+section{
+	box-sizing: border-box;
+	padding: 20px;
+	width: 100%;
+}
+.form-input{
+	box-sizing: border-box;
+	padding: 10px 5px;
+	width: 100%;
+	float: left;
+}
+.form-input.pair{
+	width: 50%;
+}
+label{
+	box-sizing: border-box;
+	display: block;
+	padding-bottom: 5px;
+}
+input{
+	box-sizing: border-box;
+	display: block;
+}
+.time input{
+	box-sizing: border-box;
+	width: 50px;
+	float: left;
+}
+.colon{
+	box-sizing: border-box;
+	float: left;
+	padding: 0 2px;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------
     ∆ GRID
@@ -46,6 +80,7 @@ li{
 
 .main-container{
   /*margin-top: 70px;*/
+  width: 100%;
 }
 
 .sub-container{
