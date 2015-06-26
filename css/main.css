@@ -24,7 +24,9 @@ html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,
 }
 
 body{
+	box-sizing: border-box;
 	font: 14px Helvetica;
+	text-transform: uppercase;
 }
 
 ul{
@@ -35,13 +37,13 @@ li{
 	float: none;
 }
 
-.clear-fix{
+.clearfix{
 	clear: both;
 }
 
 section{
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 10px 0;
 	width: 100%;
 }
 .form-input{
@@ -53,6 +55,9 @@ section{
 .form-input.pair{
 	width: 50%;
 }
+.form-input.pair input{
+	width: 100%;
+}
 label{
 	box-sizing: border-box;
 	display: block;
@@ -61,6 +66,7 @@ label{
 input{
 	box-sizing: border-box;
 	display: block;
+	padding: 5px;
 }
 .time input{
 	box-sizing: border-box;
@@ -70,7 +76,34 @@ input{
 .colon{
 	box-sizing: border-box;
 	float: left;
-	padding: 0 2px;
+	padding: 5px 3px;
+}
+
+ul#s-results{
+	padding: 5px 0 15px;
+}
+
+li{
+	line-height: 24px;
+	margin: 4px 0;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+}
+
+li:first-child{
+	border-top: 1px solid #ddd;
+}
+
+button{
+  width: 100%;
+  border-radius: 0px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  line-height: 27px;
+  background: none;
+  box-shadow: none;
+  border: 1px solid #000;
 }
 
 
@@ -80,19 +113,12 @@ input{
 
 .main-container{
   /*margin-top: 70px;*/
+  box-sizing: border-box;
   width: 100%;
 }
 
-.sub-container{
-  margin-top: 10px;
-}
-
-.meow{
-  background: #ccc;
-  height: 20px;
-}
-
 .container{
+		box-sizing: border-box;
   width: 92%; /* 73.68% 1050px*/
   max-width: 1324px;
   min-width: 300px;

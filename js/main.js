@@ -132,12 +132,12 @@ http://www.tipue.com/drop
 									var bnd = '';
 								}
 
-								bnd += '<li data-band="'+tipuedrop_in.bands[i].band+'" data-stage="'+tipuedrop_in.bands[i].stage+'">' + tipuedrop_in.bands[i].band + tipuedrop_in.bands[i].stage + '</li>';
+								bnd += '<li data-band="'+tipuedrop_in.bands[i].band+'" data-stage="'+tipuedrop_in.bands[i].stage+'">' + tipuedrop_in.bands[i].band + ' - ' + tipuedrop_in.bands[i].stage + '</li>';
 								c++;
 								ci++;
 
 							}else {
-								$('#s-results').html('<h2>No results found...</h2>');
+								$('#s-results').html('<li>No bands found...</li>');
 							}
 						}
 
@@ -147,7 +147,7 @@ http://www.tipue.com/drop
 						$('#s-results').html(bnd);
 					}
 	            } else{
-	            	$('#s-results').html('<h2>Start searching...</h2>');
+	            	$('#s-results').html('<li>Start typing...</li>');
 	            	keyCount = 0;
 	            }
 			}
