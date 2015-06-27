@@ -126,6 +126,7 @@ button{
   box-shadow: none;
   border: 1px solid #000;
   cursor: pointer;
+  outline: none;
 }
 
 button#delete-all{
@@ -155,6 +156,7 @@ span.time, span.band, span.stage, span.remove{
 }
 span.time{
 	width: 15%;
+	padding: 2px 0 0;
 }
 span.band{
 	width: 39%;
