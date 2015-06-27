@@ -152,7 +152,7 @@ span.time, span.band, span.stage, span.remove{
 	text-align: center;
 	overflow: hidden;
 	white-space: nowrap;
-	line-height: 30px;
+	line-height: 35px;
 }
 span.time{
 	width: 15%;
