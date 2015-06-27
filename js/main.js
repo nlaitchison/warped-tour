@@ -16,7 +16,7 @@
 
 	function sortList() {
 
-	    var ul = $('#band-list');
+	    var ul = jQuery('#band-list');
 	    var li = ul.children("li");
 
 	    li.detach().sort(function(a, b) {
@@ -41,6 +41,7 @@
 	}
 
 	jQuery('#add-band').on('click', function(){
+					
 		if( jQuery('#hour').val() != '' && jQuery('#minute').val() != '' && jQuery('#band').val() != '' && jQuery('#stage').val() != '' ){
 			var item = {
 				'hour' : jQuery('#hour').val(),
@@ -61,12 +62,30 @@
 			else
 				var t = 'pm';
 	
-			jQuery('#band-list').append('<li><span class="time">'+item.hour+':'+item.min+' '+t+' </span><span class="band">'+item.band+' </span><span class="stage">'+item.stage+' </span></li>')
+			jQuery('#band-list').append('<li><span class="time">'+item.hour+':'+item.min+' '+t+' </span><span class="band">'+item.band+' </span><span class="stage">'+item.stage+' </span><span class="remove">X</span></li>')
 	
 			sortList();
 			
 		}
 
+	});
+	
+	jQuery('#delete-all').on('click', function(){
+		if(localStorage.getItem("bandList"))
+			localStorage.setItem("bandList", "");
+		
+		jQuery('#band-list').empty();
+	});
+	
+	jQuery('body').on('click', '#s-results li', function(){
+		jQuery('body').find('#band').val(jQuery(this).data('band'));
+		jQuery('body').find('#stage').val(jQuery(this).data('stage'));
+		jQuery(this).parent().empty();
+	});
+	
+	jQuery('body').on('click', '#band-list li .remove', function(){
+		jQuery(this).parent('li').remove();
+		sortList();
 	});
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -131,11 +150,6 @@ http://www.tipue.com/drop
 				} else{
 					$('#s-results').empty();
 				}
-			});
-
-			$('body').on('click', '#s-results li', function(){
-				$('body').find('#band').val(jQuery(this).data('band'));
-				$('body').find('#stage').val(jQuery(this).data('stage'));
 			});
 
 			function getTipuedrop($obj)	{

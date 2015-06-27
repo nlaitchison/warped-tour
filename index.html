@@ -21,7 +21,7 @@
 					<!-- <form id="add-band"> -->
 						<div class="form-input">
 							<label for="hour">Time</label>
-							<div class="time"><input type="number" id="hour"><span class="colon">:</span><input type="number" id="minute"></div>
+							<div class="time"><input type="number" id="hour" max="12" maxlength="2"><span class="colon">:</span><input type="number" id="minute" max="59" maxlength="2"></div>
 						</div>
 						<div class="form-input pair left">
 							<label for="band">Band</label>
@@ -40,6 +40,9 @@
 				<section>
 					<ul id="band-list">
 					</ul>
+				</section>
+				<section>
+					<button id="delete-all"> Delete All </button>
 				</section>
 
 			</div>
