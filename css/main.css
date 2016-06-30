@@ -98,13 +98,13 @@ li{
 	width: 100%;
 	overflow: hidden;
 	white-space: nowrap;
+	position: relative;
+	z-index: 200;
 }
 
 ul#s-results li{
 	line-height: 26px;
 	padding: 6px 0;	
-	position: relative;
-	z-index: 200;
 }
 
 li:after{
