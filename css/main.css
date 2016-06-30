@@ -103,6 +103,8 @@ li{
 ul#s-results li{
 	line-height: 26px;
 	padding: 6px 0;	
+	position: relative;
+	z-index: 200;
 }
 
 li:after{
