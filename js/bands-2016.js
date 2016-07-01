@@ -249,7 +249,7 @@ var warpedTour = { "bands": [
 		"stage" : "CYCLOPS STAGE"
 	},
 	{
-		"band" : Teenage Bottlerocket"",
+		"band" : "Teenage Bottlerocket",
 		"stage" : "CYCLOPS STAGE"
 	},
 	{
