@@ -351,4 +351,5 @@ var warpedTour = { "bands": [
 	{
 		"band" : "With Confidence",
 		"stage" : "FULL SAIL STAGE"
-	},
+	}
+]};
